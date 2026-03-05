@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/AbhishekNS2004/jenkin.git'
+                git branch: 'main', url: 'https://github.com/AbhishekNS2004/jenkin.git'
             }
         }
 
@@ -23,7 +23,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                sh 'python app.py &'
+                sh 'python app.py'
             }
         }
     }
