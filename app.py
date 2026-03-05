@@ -12,7 +12,7 @@ def reverse_string(s):
 
 if __name__ == "__main__":
     # Example usage
-    original = "Hello, World!"
+    original = "AbhishekNS"
     reversed_str = reverse_string(original)
     print(f"Original: {original}")
     print(f"Reversed: {reversed_str}")
